@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="styles.css">
     <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
@@ -35,10 +36,12 @@
 </head>
 
 <body>
+
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=594865857780817&autoLogAppEvents=1"></script>
   
     <main>
+
         <nav class="navbar navbar-expand-lg navbar-custom   fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#"><img id="logo" src="./assets/makersporchile.png" alt=""
@@ -225,6 +228,7 @@
             </div>
         </section>
 
+
  <section class="links text-center" id="">
             <div class="container">
 				<div class="row">
@@ -240,7 +244,9 @@
 							data-href="https://www.facebook.com/Makers-por-Chile-108558847462431/" 
 							data-tabs="timeline" 
 							data-width="1200" 
+
 							data-height="1000" 
+
 							data-small-header="false" 
 							data-adapt-container-width="true" 
 							data-hide-cover="false" 
@@ -262,7 +268,9 @@
                 </div>
 
             </div>
+
         </section>		
+
         <section>
             <div class="container" id="colab">
                 <div class="row">
@@ -294,6 +302,18 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="main.js"></script>
+	<!-- The Instafeed.js library (Don't use this URL in production!) -->
+	<script src="instafeed.min.js"></script>
+	
+	<!-- Configure and run instafeed -->
+	<script>
+	  var feed = new Instafeed({
+		accessToken: 'IGQVJWaUZADSENvQnJib0NMV2FaNjZAUbHNTTXJMcDZAiOFJiRTAtZAnp4YlVBdERzYS1QVFhmanBqTWotSVZAkLTY5aVJPazBEaVd6UTQySkFHQm1UalZAkX0pKMGhFVUdxSS16M2s0ZAkVn'
+	  });
+	  
+	  feed.run();
+	</script>
 </body>
+
 
 </html>
