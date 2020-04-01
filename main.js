@@ -27,7 +27,7 @@ $('.center').slick({
     ]
 });
 
-document.querySelectorAll('.counter').forEach(e => counter(parseInt(e.getAttribute('data-count')) + 1, i => e.innerHTML = i, 1));
+document.querySelectorAll('.counter').forEach(e => counter(parseInt(e.getAttribute('data-count')) + 1, i => e.innerHTML = i, 0.001));
 
 function counter(fin, cb, s = 1) {
     var index = 0;
@@ -48,14 +48,24 @@ var self = this;
 (function () {
     var e = document.querySelector('nav');
     var logo = document.querySelector('#logo');
+    var burger = document.querySelector('#burger');
+    var donar = document.querySelector('#donar');
     window.addEventListener('scroll', function (event) {
         let pos = e.offsetTop - e.scrollTop + e.clientTop;
         if (100 < window.pageYOffset) {
             e.classList.add('fix');
-            logo.src = "./assets/makers_white.png";
+            logo.src = "./assets/logos/new/logo.png";
+            burger.classList.add('white-color');
+            burger.classList.remove('black-color');
+            donar.classList.remove('btn-secondary-1');
+            donar.classList.add('btn-secondary-2');
         } else {
             e.classList.remove('fix');
-            logo.src = "./assets/makersporchile.png";
+            logo.src = "./assets/logos/new/logo_black_text.png";
+            burger.classList.add('black-color');
+            burger.classList.remove('white-color');
+            donar.classList.remove('btn-secondary-2');
+            donar.classList.add('btn-secondary-1');
         }
     })
 })();
