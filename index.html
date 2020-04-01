@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162431220-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162431220-1');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makers por Chile</title>
@@ -33,6 +42,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#FF4F4F">
+    
 </head>
 
 <body>
@@ -42,14 +52,14 @@
   
     <main>
 
-        <nav class="navbar navbar-expand-lg navbar-custom   fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#"><img id="logo" src="./assets/makersporchile.png" alt=""
-                        class="desktop"><img id="logo2" class="mobile" src="./assets/makers_white.png" alt=""></a>
+                <a class="navbar-brand" href="#"><img id="logo" src="./assets/logos/new/logo_black_text.png" alt=""
+                        class="desktop"><img id="logo2" class="mobile" src="./assets/logos/new/logo_icon.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="material-icons">menu</span>
+                    <span id="burger" class="material-icons black-color">menu</span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
@@ -62,7 +72,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#colab">Colaboradores </a>
                         </li>
-                        <li class="nav-item btn-secondary">
+                        <li id="donar" class="nav-item btn-secondary">
                             <a class="nav-link" href="#donation">Donar</a>
                         </li>
                     </ul>
@@ -70,7 +80,7 @@
             </div>
         </nav>
         <header id="init">
-            <img src="./assets/oval.png" alt="" class="oval">
+            <img src="./assets/oval_new.png" alt="" class="oval">
             <div class="container ">
                 <div class="row d-flex">
                     <div class="col-md-6 aling">
@@ -140,16 +150,17 @@
                     </div>
                     <div class="col-md-6">
                         <div class="boxList">
-                            <h4>Necesitamos tu apoyo!!! </h4>
-                            <h6>Para poder fabricar las mascaras utilizamos : </h6>
-                            <p><img src="./assets/list.png" alt="">Mica Transparente (usada en anillado)</p>
-                            <p><img src="./assets/list.png" alt="">Elástico (de ropa o redondo) </p>
-                            <p><img src="./assets/list.png" alt="">Filamento PLA</p>
-                            <p><img src="./assets/list.png" alt="">Aporte voluntario ($) para la compra de materiales
+                            <h4>¡Necesitamos tu apoyo! </h4>
+                            <h6>Para poder fabricar las mascaras utilizamos</h6>
+                            <p><img src="./assets/check.png" alt="">Mica Transparente (usada en anillado)</p>
+                            <p><img src="./assets/check.png" alt="">Elástico (de ropa o redondo) </p>
+                            <p><img src="./assets/check.png" alt="">Filamento PLA</p>
+                            <p><img src="./assets/check.png" alt="">Aporte voluntario ($) para la compra de materiales
                             </p>
                             <br><br>
-                            <p>Matías Rozas</p>
-                            <p>contacto@makersporchile.cl - 977485661</p>
+                            <p>Equipo makers por Chile</p>
+                            <p><a href="mailto:contacto@makersporchile.cl">contacto@makersporchile.cl</a></p>
+                            <p><a href="tel:+569977485661">+56 9 97748 5661</a></p>
                         </div>
                     </div>
                 </div>
