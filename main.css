@@ -381,3 +381,7 @@ body,
         align-items: center;
             
         }
+
+        .condensed {
+            margin-bottom: 1px;
+        }

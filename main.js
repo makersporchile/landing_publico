@@ -27,7 +27,7 @@ $('.center').slick({
     ]
 });
 
-document.querySelectorAll('.counter').forEach(e => counter(parseInt(e.getAttribute('data-count')) + 1, i => e.innerHTML = i, 0.001));
+document.querySelectorAll('.counter').forEach(e => counter(parseInt(e.getAttribute('data-count')) + 1, i => e.innerHTML = i, 1));
 
 function counter(fin, cb, s = 1) {
     var index = 0;
@@ -35,7 +35,7 @@ function counter(fin, cb, s = 1) {
         if (index < fin) {
             setTimeout(function () {
                 cb(index);
-                index++;
+                index = index + 10;
                 it();
             }, s);
         }
